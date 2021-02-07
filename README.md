@@ -8,6 +8,4 @@ Earn gold by defeating red circles and buy upgrades.
 
 python <path to main.py>
 
-Works With:
-  python 3.7.4+
-  pygame 1.9.6+
+Works With: python 3.7.4+, pygame 1.9.6+.
