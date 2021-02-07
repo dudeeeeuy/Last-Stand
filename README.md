@@ -1,8 +1,8 @@
 # Last-Stand
 
-Defend against endless waves of red circles using the last remaining turret of the XXX army. Protect the people of XXX.
+Defend against endless waves of red circles using the last remaining turret of the XXX army.
 
-Earn gold and buy upgrades.
+Earn gold by defeating red circles and buy upgrades.
 
 # To Run the Game
 
