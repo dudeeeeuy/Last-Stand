@@ -1,10 +1,10 @@
 # The Last Stand
 
-![Last Stand Screenshot](last_stand.JPG)
-
 Defend against endless waves of red circles using the last remaining turret of the XXX army.
 
 Earn gold by defeating red circles and buy upgrades.
+
+![Last Stand Screenshot](last_stand.JPG)
 
 ## To Run the Game
 
