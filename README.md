@@ -1,5 +1,7 @@
 # The Last Stand
 
+![Last Stand Screenshot](last_stand.JPG)
+
 Defend against endless waves of red circles using the last remaining turret of the XXX army.
 
 Earn gold by defeating red circles and buy upgrades.
@@ -11,5 +13,3 @@ Earn gold by defeating red circles and buy upgrades.
 Works With:
   * python 3.7.4+
   * pygame 1.9.6+
-  
-![Last Stand Screenshot](last_stand.JPG)
