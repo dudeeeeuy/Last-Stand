@@ -6,7 +6,7 @@ Earn gold by defeating red circles and buy upgrades.
 
 ## To Run the Game
 
-python \<path to main.py\>
+`python <path to main.py>`
 
 Works With:
   * python 3.7.4+
