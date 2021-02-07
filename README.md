@@ -1,6 +1,6 @@
 # Last-Stand
 
-Defend aginst endless waves of red circles using the last remaining turret of the xxx army. 
+Defend against endless waves of red circles using the last remaining turret of the XXX army. Protect the people of XXX.
 
 Earn gold and buy upgrades.
 
