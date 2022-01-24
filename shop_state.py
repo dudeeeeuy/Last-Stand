@@ -11,7 +11,7 @@ class ShopState:
             (settings.WIN_SIZE[1] - ui.Shop.size[1]) // 2
             self.gdata.shop = ui.Shop(self.gdata, shop_tl)
             self.gdata.shop.add_item(ui.ReloadBoost(self.gdata))
-            self.gdata.shop.add_item(ui.TurnBoost(self.gdata))
+            self.gdata.shop.add_item(ui.HealthBoost(self.gdata))
             self.gdata.shop.add_item(ui.SpreadShot(self.gdata))
             self.gdata.shop.add_item(ui.Shockwave(self.gdata))
             self.gdata.shop.add_item(ui.Piercing(self.gdata))

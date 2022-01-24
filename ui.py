@@ -124,20 +124,24 @@ class ReloadBoost(ShopItem):
             self.btn.text = "$" + str(self.cost)
             self.btn.redraw()
 
-class TurnBoost(ShopItem):
+class HealthBoost(ShopItem):
+
     def __init__(self, gdata):
-        self.boost = 2
-        super().__init__(gdata, "Turn Faster", 200)
+        super().__init__(gdata, "Increase Health", 200)
 
     def on_buy(self, mpos):
         if self.gdata.player.money >= self.cost:
             self.gdata.player.money -= self.cost
-            self.gdata.player.avel = self.gdata.player.avel + self.boost
-            self.boost += 2
+            self.gdata.player.set_max_health(
+                int(2 * self.gdata.player.max_health)
+            )
+            self.gdata.player.set_health(
+                int(2 * self.gdata.player.health)
+            )
             self.cost *= 2
             self.btn.text = "$" + str(self.cost)
             self.btn.redraw()
-        
+
 class SpreadShot(ShopItem):
     def __init__(self, gdata):
         self.bought = False
@@ -166,7 +170,7 @@ class Shockwave(ShopItem):
 class Piercing(ShopItem):
     def __init__(self, gdata):
         self.bought = False
-        super().__init__(gdata, "Piercing Shot", 1500)
+        super().__init__(gdata, "Piercing Shot", 2000)
 
     def on_buy(self, mpos):
         if self.gdata.player.money >= self.cost and not self.bought:

@@ -14,7 +14,7 @@ class StateMechine():
             self.removing = replacing
             self.new_state = state
         else:
-            raise Exception("Something went wrong, sry cant help :(")
+            raise Exception("Something went wrong, sorry can't help :(")
 
     def remove(self):
         self.removing = True

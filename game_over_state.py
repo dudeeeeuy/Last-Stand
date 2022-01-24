@@ -2,8 +2,9 @@ import pygame as pg
 import settings
 import ui
 
+
 class GameOverState:
-    
+
     def __init__(self, gdata):
         self.gdata = gdata
         height = 220
@@ -13,12 +14,11 @@ class GameOverState:
         btn_size = 80, 50
         btn_left = (settings.WIN_SIZE[0] - btn_size[0]) // 2
         btn_top = rect.top + rect.height // 2
-        
-        self.ok_btn = ui.Button((btn_left, btn_top), btn_size, self.on_ok, "Ok",\
-            self.gdata.fonts["Large"])
 
-        self.text = self.gdata.fonts["Large"].render("Game Over, You Lasted " +\
-            str(self.gdata.time // 1000) + " Seconds", True, settings.WHITE)
+        self.ok_btn = ui.Button((btn_left, btn_top), btn_size, self.on_ok, "Ok", self.gdata.fonts["Large"])
+
+        self.text = self.gdata.fonts["Large"].render("Game Over, You Lasted " + \
+                                                     str(self.gdata.time // 1000) + " Seconds", True, settings.WHITE)
         text_left = (settings.WIN_SIZE[0] - self.text.get_width()) // 2
         text_top = rect.height // 4 - self.text.get_height() // 2 + rect.top
         self.text_tl = text_left, text_top
